@@ -1,0 +1,102 @@
+*{
+  background-color:#102C57;
+  color: #FFB1B1;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.main{
+  position: absolute;
+  height: auto;
+  width: 80%;
+  z-index: 10;
+  border: solid 5px #1679AB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5%;
+}
+
+.title{
+  width: 80%;
+  text-align: center;
+  font-size: xx-large;
+  border-bottom: solid 5px #1679AB;
+  border-radius: 5%;
+}
+
+.recent{
+  border: #1679AB solid 5px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  width: 80%;
+}
+
+.essay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.user{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-left: solid 5px #1679AB;
+}
+
+.photo{
+  margin-top: 5%;
+}
+
+.name{
+  width: 100%;
+  border-top: #1679AB solid 5px;
+  text-align: center;
+}
+
+.post{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+}
+
+.writing{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea{
+  background-color: #1679AB;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+}
+
+input{
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.change{
+  margin-top: 5px;
+  padding: 5%;
+}

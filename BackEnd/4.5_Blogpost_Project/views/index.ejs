@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="title">
+      <h1>The Daily post 📰</h1>
+    </div>
+
+    <%if(locals.message){%>
+      <div class="recent">
+        <div class="essay">
+          <p>
+            <%=message%>
+          </p>
+          <form method="post" action="/">
+            <input type="submit" value="DELETE" class="change">
+          </form>
+          <form action="/edit" method="post" >
+            <input type="submit" value="EDIT" class="change">
+          </form>
+        </div>
+        <div class="user">
+          <div class="photo">
+            <img src="images/download.jpg" alt="user photo" width="100%">
+          </div>
+          <div class="name">
+            <p>User #6671</p>
+          </div>
+        </div>
+      </div>
+      <div class="recent">
+        <div class="essay">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non obcaecati optio neque voluptates dignissimos 
+            temporibus soluta magnam dolorum, perspiciatis doloremque ipsa laborum dolor libero blanditiis sed eos lau
+            dantium corporis! Quasi?
+          </p>
+        </div>
+        <div class="user">
+          <div class="photo">
+            <img src="images/download.jpg" alt="user photo" width="100%">
+          </div>
+          <div class="name">
+            <p>User #6671</p>
+          </div>
+        </div>
+      </div>
+    <%}else{%>
+      <div class="recent">
+        <div class="essay">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non obcaecati optio neque voluptates dignissimos 
+            temporibus soluta magnam dolorum, perspiciatis doloremque ipsa laborum dolor libero blanditiis sed eos lau
+            dantium corporis! Quasi?
+          </p>
+        </div>
+        <div class="user">
+          <div class="photo">
+            <img src="images/download.jpg" alt="user photo" width="100%">
+          </div>
+          <div class="name">
+            <p>User #6671</p>
+          </div>
+        </div>
+      </div>
+    <%}%>
+    <div class="post">
+      <%if(locals.edit){%>
+        <form action="/submit" method="POST" class="writing">
+          <textarea name="text" rows="5" placeholder="Share Your Thought 📫"><%=edit%></textarea>
+          <input type="submit" value="Share">
+        </form>
+      <%}else{%>
+        <form action="/submit" method="POST" class="writing">
+          <textarea name="text" rows="3" placeholder="Share Your Thought 📫"></textarea>
+          <input type="submit" value="Share">
+        </form>
+      <%}%>
+    </div>
+  </div>
+</body>
+</html>
