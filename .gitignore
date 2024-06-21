@@ -1,5 +1,5 @@
 #solutions
-solution.js
+solution.[0-9]*.js
 
 #json lock package
 package-lock.json
