@@ -1,3 +1,6 @@
+#json lock package
+.package-lock.json
+
 # Logs
 logs
 *.log
