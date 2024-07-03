@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DON"T BURN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <div class="main">
+    <div class="nav">
+      <div class="icon">
+        <h1>
+          DON'T BURN
+        </h1>
+      </div>
+      <div class="user">
+        <div class="userpic">
+          <img src="https://www.svgrepo.com/show/532397/user-shield-alt-1.svg" alt="userimg" width="30px">
+        </div>
+        <div class="username">
+          <p>K12TK013A1N</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left">
+        <div class="content-1">
+          <div>
+            <h1>Sunlight and Skin Damage</h1>
+          </div>
+          <div>
+            <p>UV light (all types) damages deoxyribonucleic acid (DNA—the body's genetic material), which can ultimately lead to cancer. UV light also causes damaging effects such as premature skin aging and wrinkling. Sunburn can also result from UV light, primarily UVB. There is no recommended safe level of UV light.
+              The amount of UV light reaching the earth's surface is increasing, especially in the northern latitudes. This increase is caused by depletion of the protective ozone layer high in the atmosphere. Ozone, a naturally occurring chemical, blocks much UV light from reaching the surface of the earth. Chemical reactions between ozone and chlorofluorocarbons (chemicals in refrigerants and spray can propellants) are depleting the amount of ozone in the protective ozone layer.
+              The amount of UV light reaching the earth's surface also varies depending on other factors. UV light is more intense between 10 AM and 4 PM, during the summer, and at high altitudes and low latitudes (such as at the equator). Glass, heavy clouds, smoke, and smog filter out much UV light, but UV rays may pass through light clouds, fog, and about 1 foot of clear water, potentially causing severe burns.
+            </p>
+          </div>
+          <div>
+            <form action="/sun" class="form" method="POST">
+              <button type="submit">Do I Need Sunscreen ☀️?</button>
+            </form>
+          </div>
+          <%if(locals.yourIp){%>
+            <div class="ans">
+              <div class="ip">
+                <img src="https://www.svgrepo.com/show/517090/ip-tools.svg" alt="ip-address" width="30px">
+                <p><%=yourIp%></p>
+              </div>
+              <div class="city">
+                <img src="https://www.svgrepo.com/show/532539/location-pin.svg" alt="location" width="30px">
+                <p><%=yourCity%></p>
+              </div>
+              <div>
+                <img src="https://www.svgrepo.com/show/86678/uv-rays-of-sun.svg" alt="uv-index" width="30px">
+                <p><%=yourUv%></p>
+              </div>
+              <div>
+                <img src="https://www.svgrepo.com/show/279333/sun-cream.svg" alt="Sunscreen" width="30px">
+                <p><%=yourSun%></p>
+              </div>
+            </div>
+          <%}%>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content-1">
+          <div>
+            <h1>Why Sun-Screen ?</h1>
+          </div>
+          <div>
+            <ul>
+              <li>🌣  Protection from UV Rays</li>
+              <li>🌣  Prevention of Skin Cancer</li>
+              <li>🌣  Prevents Premature Aging</li>
+              <li>🌣  Reduces Sunburn Risk</li>
+              <li>🌣  Maintains Even Skin tone</li>
+              <li>🌣  Protection for All Skin Types</li>
+              <li>🌣  Essential for Outdoor Activities</li>
+              <li>🌣  Complements Other Sun Protection Measures</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
