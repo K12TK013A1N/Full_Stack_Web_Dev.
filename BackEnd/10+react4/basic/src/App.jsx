@@ -12,7 +12,7 @@ function App() {
     greeting = "GoodEvening";
     theme.color = "blue";
   }
-  var obj = <h1 style={theme}>{greeting}</h1>
+  var obj = <h1 style={theme} className="heading">{greeting}</h1>
   return obj
 }
 
